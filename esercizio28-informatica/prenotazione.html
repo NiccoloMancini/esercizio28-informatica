@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="gestionePrenotazione.php" method="post">
+        <label for="fname">nome:</label><br>
+        <input type="text" name="nome" required><br>
+        <label for="lname">cognome:</label><br>
+        <input type="text" name="cognome" required><br>
+        <label for="lname">tavolo: </label>
+        <select name="tavolo">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select><br>
+          <label for="lname">orario:</label>
+        <input type="time" name="orario"><br>
+        <label for="lname">eventuali note: </label><br>
+        <textarea name="note" rows="4" cols="25"></textarea><br>
+        <label for="lname">ordine: </label><br>
+        <input type="checkbox" name="ordine[]" value="antipasto">antipasto<br>
+        <input type="checkbox" name="ordine[]" value="primo">primo<br>
+        <input type="checkbox" name="ordine[]" value="secondo">secondo<br>
+        <label for="lname">parcheggio: </label><br>
+        <input type="radio" name="parcheggio" value="parcheggio custodito" required>parcheggio custodito<br>
+        <input type="radio" name="parcheggio" value="parcheggio non custodito" required>parcheggio non custodito<br>
+        <input type="radio" name="parcheggio" value="non usufruisce del parcheggio" required>non usufruisce del parcheggio<br>
+        <input type="submit" value="invia">
+      </form>
+</body>
+</html>
